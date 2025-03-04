@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Deploy Apps using Streamlit
 
 Repository to test the deployment of streamlit apps
@@ -26,3 +27,6 @@ I can view all my apps by going to the website https://share.streamlit.io/ and l
 # Other useful links about Streamlit
 
 [Streamlit Cheatsheet](https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py)
+=======
+# 2024recap
+>>>>>>> 3ca93acc1acdf25eb30d77ad72880a691e978970
