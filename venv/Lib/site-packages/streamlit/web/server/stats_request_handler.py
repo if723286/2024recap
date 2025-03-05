@@ -1,4 +1,4 @@
-# Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022-2024)
+# Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022-2025)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@ from typing import TYPE_CHECKING
 
 import tornado.web
 
+from streamlit.web.server import allow_cross_origin_requests
 from streamlit.web.server.server_util import emit_endpoint_deprecation_notice
 
 if TYPE_CHECKING:
@@ -30,9 +31,6 @@ class StatsRequestHandler(tornado.web.RequestHandler):
         self._manager = stats_manager
 
     def set_default_headers(self):
-        # Avoid a circular import
-        from streamlit.web.server import allow_cross_origin_requests
-
         if allow_cross_origin_requests():
             self.set_header("Access-Control-Allow-Origin", "*")
 

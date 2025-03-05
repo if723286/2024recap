@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Tesa 2\OneDrive\MOONETAES\streamlit_deploy\venv
+set VIRTUAL_ENV=C:\Users\Tesa 2\OneDrive\Trabajos\TESA\2024\Recapitulación año 2024\2024recap\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
